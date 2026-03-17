@@ -5,7 +5,11 @@ kuji = ["大吉", "中吉", "小吉", "凶"]
 
 def draw_kuji():
     result = random.choice(kuji)
-    label_result.config(text=result)
+
+    if result == "大吉":
+        label_result.config(text=result, fg="gold")
+    else:
+        label_result.config(text=result, fg="black")
 
 # ウィンドウを作成
 
