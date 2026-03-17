@@ -3,6 +3,15 @@ import random
 
 kuji = ["超大吉", "大吉", "中吉", "小吉", "凶"]
 
+#コメントを表示
+comments = {
+    "超大吉": "奇跡レベルの運勢です！",
+    "大吉": "最高の一日になります！",
+    "中吉": "良いことが起きるかも",
+    "小吉": "小さなラッキーがあるかも",
+    "凶": "今日は慎重に行動しよう……"
+}
+    
 def draw_kuji():
     result = random.choice(kuji)
 
@@ -10,6 +19,8 @@ def draw_kuji():
         label_result.config(text=result, fg="gold")
     else:
         label_result.config(text=result, fg="black")
+    
+    label_comment.config(text=comments[result])
 
 # ウィンドウを作成
 
@@ -27,6 +38,8 @@ label_title.pack(pady=10)
 
 label_result = tk.Label(root, text="ボタンを押してね", font=("Arial", 35), bg="#ffe4e4")
 label_result.pack(pady=10)
+label_comment = tk.Label(root, text="", font=("Arial", 18), bg="#ffe4e4")
+label_comment.pack(pady=10)
 
 # ボタンの表示
 
