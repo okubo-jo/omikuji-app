@@ -13,17 +13,17 @@ root = tk.Tk()
 root.title("おみくじアプリ")
 root.geometry("800x600")
 
-# タイトル
+# タイトルの表示
 
 label_title = tk.Label(root, text="おみくじ", font=("Arial", 20))
 label_title.pack(pady=10)
 
-# 結果表示
+# 結果の表示
 
-label_result = tk.Label(root, text="ボタンを押してね", font=("Arial", 16))
+label_result = tk.Label(root, text="ボタンを押してね", font=("Arial", 35))
 label_result.pack(pady=10)
 
-# ボタン
+# ボタンの表示
 
 button = tk.Button(
     root, 
