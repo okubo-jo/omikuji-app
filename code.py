@@ -16,15 +16,16 @@ def draw_kuji():
 root = tk.Tk()
 root.title("おみくじアプリ")
 root.geometry("800x600")
+root.configure(bg="#ffe4e4")
 
 # タイトルの表示
 
-label_title = tk.Label(root, text="おみくじ", font=("Arial", 20))
+label_title = tk.Label(root, text="おみくじ", font=("Arial", 20), bg="#ffe4e4")
 label_title.pack(pady=10)
 
 # 結果の表示
 
-label_result = tk.Label(root, text="ボタンを押してね", font=("Arial", 35))
+label_result = tk.Label(root, text="ボタンを押してね", font=("Arial", 35), bg="#ffe4e4")
 label_result.pack(pady=10)
 
 # ボタンの表示
