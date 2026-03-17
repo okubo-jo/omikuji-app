@@ -1,12 +1,12 @@
 import tkinter as tk
 import random
 
-kuji = ["大吉", "中吉", "小吉", "凶"]
+kuji = ["超大吉", "大吉", "中吉", "小吉", "凶"]
 
 def draw_kuji():
     result = random.choice(kuji)
 
-    if result == "大吉":
+    if result == "超大吉":
         label_result.config(text=result, fg="gold")
     else:
         label_result.config(text=result, fg="black")
