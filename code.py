@@ -25,7 +25,14 @@ label_result.pack(pady=10)
 
 # ボタン
 
-button = tk.Button(root, text="おみくじを引く", command=draw_kuji)
+button = tk.Button(
+    root, 
+    text="おみくじを引く", 
+    command=draw_kuji,
+    font=("Arial", 20),
+    width=12,
+    height=2
+)
 button.pack(pady=10)
 
 root.mainloop()
