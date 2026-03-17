@@ -35,12 +35,23 @@ root.configure(bg="#ffe4e4")
 
 # タイトルの表示
 
-label_title = tk.Label(root, text="おみくじ", font=("Arial", 20), bg="#ffe4e4")
+label_title = tk.Label(
+    root,
+    text="⛩ おみくじ ⛩",
+    font=("Arial", 30, "bold"),
+    bg="#fff5f5",
+    fg="#b22222"
+)
 label_title.pack(pady=10)
 
 # 結果の表示
 
-label_result = tk.Label(root, text="ボタンを押してね", font=("Arial", 35), bg="#ffe4e4")
+label_result = tk.Label(
+    root,
+    text="ボタンを押してね",
+    font=("Arial", 40, "bold"),
+    bg="#fff5f5"
+)
 label_result.pack(pady=10)
 label_comment = tk.Label(root, text="", font=("Arial", 18), bg="#ffe4e4")
 label_comment.pack(pady=10)
@@ -51,9 +62,12 @@ button = tk.Button(
     root, 
     text="おみくじを引く", 
     command=draw_kuji,
-    font=("Arial", 20),
+    font=("Arial", 22),
     width=12,
-    height=2
+    height=2,
+    bg="#b22222",
+    fg="white",
+    activebackground="#8b0000"
 )
 button.pack(pady=10)
 
