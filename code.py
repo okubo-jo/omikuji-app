@@ -13,7 +13,11 @@ comments = {
 }
     
 def draw_kuji():
-    result = random.choice(kuji)
+    result = random.choices(
+        kuji,
+        weights=[5, 10, 30, 40, 20],
+        k=1
+    )[0]
 
     if result == "超大吉":
         label_result.config(text=result, fg="gold")
